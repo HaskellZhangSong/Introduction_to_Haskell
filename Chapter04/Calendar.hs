@@ -22,3 +22,4 @@ accDays y m d | d > monthDays y m = error "invalid days"
 
 week :: Year -> Month -> Day -> Weekday
 week y m d = week' y (accDays y m d)
+
