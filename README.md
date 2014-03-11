@@ -15,6 +15,8 @@ This is source code of my book.
 
 第51页  中间的代码，avg xs = sum xs / fromIntegral $ length xs 应该改为 avg xs = sum xs / (fromIntegral $ length xs)
 
+第146页 Haskell 2000应该为Haskell 2010.
+
 第312页 计算W W时，等号后面应该是希腊字母Beta而不是数字8.
 
-第358页 第一个参考文献中的Functiondl应该为Functional
+第358页 第一个参考文献中的Functiondl应该为Functional。
