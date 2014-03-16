@@ -9,6 +9,8 @@ This is source code of my book.
 
 第14页  第10行。Haksell应该改为Haskell。
 
+第15页  第4段，最后一句Prelude如定义3curry 。。。 改为Prelude中定义了curry。。。
+
 第22页  图2-1中，Num类型类中没有除法/ 。
 
 第45页  倒数第6行，对照图3-3，应该为对照图3-2 。
