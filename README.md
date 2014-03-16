@@ -41,6 +41,8 @@ This is source code of my book.
 
 第221页 第3段，第1行中“相邻读者”改为“相信读者”
 
+第312页 Beta化简中的+应该去掉。
+
 第312页 计算W W时，等号后面应该是希腊字母Beta而不是数字8.
 
 第358页 第一个参考文献中的Functiondl应该为Functional。
