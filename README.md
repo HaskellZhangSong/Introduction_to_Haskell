@@ -27,9 +27,10 @@ This is source code of my book.
 
 **第90页  msort缺少递归基本条件，应该改为
 
-msort [] = [] 
-msort [x] = [x]
-msort xs = merge (msort x1) (msort x2)
+###
+    msort [] = [] 
+    msort [x] = [x]
+    msort xs = merge (msort x1) (msort x2)
            where (x1, x2) = halve xs
                  halve xs = (take l xs, drop l xs)
                  l = (length xs) `div` 2
