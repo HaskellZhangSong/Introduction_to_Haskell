@@ -17,7 +17,11 @@ This is source code of my book.
 
 第22页  图2-1中，Num类型类中没有除法/ 。
 
-第32页 示例中 > f xs = let len = genericLength xs in (len,len)是多余的，应该删去。
+第32页 示例中 
+### 
+    > f xs = let len = genericLength xs in (len,len)
+    
+是多余的，应该删去。
 
 第45页  倒数第6行，对照图3-3，应该为对照图3-2 。
 
