@@ -17,6 +17,28 @@ This is source code of my book.
 
 第22页  图2-1中，Num类型类中没有除法/ 。
 
+第22页  图2-1中，GHC 7.4后Num类型类将不再隐含着Eq类型类，所以对于使用GHC7.0与Hugs的读者不会有影响，所以图中虚线箭头应该去掉，这样当使用模式匹配还有case时类型上下文中需要加入Eq类型类限定。这一新的改动影响了第5章第6节第70页还有其他章节某些代码
+###
+    fact :: (Num a) => a -> a
+    fact 0 = 1
+    fact n = n * fact (n-1)
+会得到如下错误：
+### 
+    Fact.hs:2:6:
+    Could not deduce (Eq a) arising from the literal `0'
+    from the context (Num a)
+      bound by the type signature for fact :: Num a => a -> a
+      at Fact.hs:1:9-25
+    Possible fix:
+      add (Eq a) to the context of
+        the type signature for fact :: Num a => a -> a
+    In the pattern: 0
+    In an equation for `fact': fact 0 = 1
+
+根据GHCi给出的可能修复的方式，可以加入Eq a到类型签名的上下文中，即将fact的类型签名改为：
+###
+    fact :: (Num a , Eq a) => a -> a
+
 第32页 示例中 
 ### 
     > f xs = let len = genericLength xs in (len,len)
