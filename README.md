@@ -17,7 +17,7 @@ This is source code of my book.
 
 第22页  图2-1中，Num类型类中没有除法/ 。
 
-第22页  图2-1中，GHC 7.4后Num类型类将不再隐含着Eq类型类，所以对于使用GHC7.0与Hugs的读者不会有影响，所以图中虚线箭头应该去掉，这样当使用模式匹配还有case时类型上下文中需要加入Eq类型类限定。这一新的改动影响了第5章第6节第70页还有其他章节某些代码
+第22页  图2-1中，GHC 7.4后Num类型类将不再隐含着Eq与Ord类型类，所以对于使用GHC7.0与Hugs的读者不会有影响，所以图中虚线箭头应该去掉，这样当使用模式匹配还有case时类型上下文中需要加入Eq类型类限定。这一新的改动影响了第5章第6节第70页还有其他章节某些代码
 ###
     fact :: (Num a) => a -> a
     fact 0 = 1
@@ -39,6 +39,8 @@ This is source code of my book.
 ###
     fact :: (Num a , Eq a) => a -> a
 
+这一点影响了37页的abs函数与70页的fibonacci函数。如果读者不确定函数的类型，可以不写类型签名让GHC去推断。
+
 第32页 示例中 
 ### 
     > f xs = let len = genericLength xs in (len,len)
@@ -50,6 +52,8 @@ This is source code of my book.
 第49页  代码示例空格缺失了。应该为> flip (-) 3 8。
 
 第51页  中间的代码，avg xs = sum xs / fromIntegral $ length xs 应该改为 avg xs = sum xs / (fromIntegral $ length xs)
+
+第63页 第三段代码facorial的类型应该为Integer -> Integer，而非Integer -> Integer -> Integer。
 
 第81页  第二段代码, 结果多了一个逗号。应该为[5,7,10,12]。
 
