@@ -83,6 +83,8 @@ This is source code of my book.
 
 第146页 Haskell 2000应该为Haskell 2010.
 
+第181页 第3段代码，>runParser num应该为>runParser number
+
 第203页 测试代码中，两处\x -> （Maybe 6 .. 应该改为Just 6
 
 *第203页 最底端的代码 Just (x+y) 应为 Just (n1+n2) 。
