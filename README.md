@@ -41,6 +41,14 @@ This is source code of my book.
 
 这一点影响了37页的abs函数与70页的fibonacci函数。如果读者不确定函数的类型，可以不写类型签名让GHC去推断。
 
+第25页  倒数第10行，`to String`应该为`toString`。
+
+第26页  `b : : Bool`应该为`b :: Bool`。
+
+第28页  第3段`(Num a) => (a> a)> ((a> a),C)`应为`(Num a) => (a -> a) -> ((a -> a), C)`。
+
+第29页  第3段`柯里伦`应为`柯里化`。第3段代码`Show/a`应为`Show a`。
+
 第32页 示例中 
 ### 
     > f xs = let len = genericLength xs in (len,len)
@@ -52,6 +60,8 @@ This is source code of my book.
 第49页  代码示例空格缺失了。应该为> flip (-) 3 8。
 
 第51页  中间的代码，avg xs = sum xs / fromIntegral $ length xs 应该改为 avg xs = sum xs / (fromIntegral $ length xs)
+
+第55页  prelude应为Prelude。
 
 第63页 第三段代码facorial的类型应该为Integer -> Integer，而非Integer -> Integer -> Integer。
 
@@ -70,6 +80,8 @@ This is source code of my book.
 第92页  最后一段代码， [1..]  应该改为 [1,1..] 。
 
 第95页  take 5 nature的结果应该为[0,1,2,3,4]而非[1,2,3,4,5]
+
+第124页  第一行`某两个列表`应为`某个列表`。
 
 **第124页 该页的最后一段：理论上。。。以及下面的图7-1应该插入在125页练习2之后。
 
