@@ -153,4 +153,6 @@ This is source code of my book.
 
 第312页 计算W W时，等号后面应该是希腊字母Beta而不是数字8.
 
+第326页 Ivar' 应为 'IVar'
+
 第358页 第一个参考文献中的Functiondl应该为Functional。
