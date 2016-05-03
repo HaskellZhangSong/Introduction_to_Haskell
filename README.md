@@ -91,6 +91,8 @@ This is source code of my book.
 
 第95页  take 5 nature的结果应该为[0,1,2,3,4]而非[1,2,3,4,5]
 
+第100页 isPrime' 代码需要排除偶数的情况，看[Chapter06/Prime.hs](Chapter06/Prime.hs)
+
 第124页  第一行`某两个列表`应为`某个列表`。
 
 **第124页 该页的最后一段：理论上。。。以及下面的图7-1应该插入在125页练习2之后。
