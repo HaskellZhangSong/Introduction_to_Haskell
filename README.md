@@ -30,7 +30,7 @@ Num这里仅仅是一个统称，所有的相同类型的数字都是可以比�
     fact 0 = 1
     fact n = n * fact (n-1)
 会得到如下错误：
-### 
+###
     Fact.hs:2:6:
     Could not deduce (Eq a) arising from the literal `0'
     from the context (Num a)
@@ -56,10 +56,10 @@ Num这里仅仅是一个统称，所有的相同类型的数字都是可以比�
 
 第29页  第3段`柯里伦`应为`柯里化`。第3段代码`Show/a`应为`Show a`。
 
-第32页 示例中 
-### 
+第32页 示例中
+###
     > f xs = let len = genericLength xs in (len,len)
-    
+
 是多余的，应该删去。
 
 第36页 第一段代码isTwo类型签名应该为Int -> Bool，第二行Ture应该为True
@@ -89,7 +89,7 @@ Num这里仅仅是一个统称，所有的相同类型的数字都是可以比�
 **第90页  msort缺少递归基本条件，应该改为
 
 ###
-    msort [] = [] 
+    msort [] = []
     msort [x] = [x]
     msort xs = merge (msort x1) (msort x2)
            where (x1, x2) = halve xs
@@ -114,11 +114,11 @@ Num这里仅仅是一个统称，所有的相同类型的数字都是可以比�
 
 第130页 第1段第4行义模式（，）这与C语言。  原文中少了逗号
 
+第146页 Haskell 2000应该为Haskell 2010.
+
 第159页 8.10 简vd单 中混进了几个字母，应该删除。
 
 第152页 第3段最后一行与自然树（数）同构
-
-第146页 Haskell 2000应该为Haskell 2010.
 
 第172页 第3段最后一行，函数（子）类型类实例
 
